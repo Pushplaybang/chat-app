@@ -1,0 +1,139 @@
+<head>
+	<title>Chat App Demo</title>
+</head>
+<body>
+	{{> appstate }}
+	{{> loginButtons align="right" }}<br />
+	<h1>Simple Chat</h1>
+	{{> navigation }}
+	<div class="content">
+		{{> Router }}  <!-- should swop this for a layout template -->
+	</div>
+	{{> footer }}
+</body>
+
+<template name="appstate">
+	<p class="status status-{{ state }}"><span></span>{{ status }}</p>
+</template>
+
+<template name="navigation">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/search">Add Contacts</a></li>
+		<li><a href="/contacts">Your Contacts</a></li>
+		<li><a href="/groups">Your Groups</a></li>
+		<li><a href="/creategroup">Create Groups</a></li>
+	</ul>
+</template>
+
+<template name="welcome">
+	{{#if currentUser}}
+		<p>Welcome to my shit chat app.</p>
+	{{else}}
+		<p>Wlcome to my shit chat app, please sign-in.</p>
+	{{/if}}
+</template>
+
+<template name="contacts">
+	{{#if currentUser}}
+		<div class="userselect">
+			{{#each contacts}}
+				<p>
+					<!-- Gravatar -->
+					{{> avatar user=this shape="square" size="small"}}
+					<a href="/contacts/{{ _id }}">
+						<span>{{ name }}</span>
+					</a>
+				</p>
+				<a href="/contacts/{{ _id }}" class="add-contact">Add Member</a>
+				<a href="/contacts/{{ _id }}" class="remove-contact">Add Member</a>
+			{{/each}}
+		</div>
+	{{/if}}
+</template>
+
+<template name="chat">
+	{{> chatform }}
+	{{> messages }}
+</template>
+
+<!-- Chat Form -->
+<template name="chatform">
+	{{#if currentUser}}
+		<form class="chatform">
+			<label for="text">Message</label>
+			<textarea name="text" id="message" placeholder="write a message"></textarea>
+		</form>
+	{{/if}}
+</template>
+
+<!-- Messages -->
+<template name="messages">
+	{{#each messages}}
+		{{> message }}
+	{{/each}}
+</template>
+
+<!-- Single Message Template -->
+<template name="message">
+	<p>
+	{{> avatar userId=userId shape="square" size="small"}}
+	<strong>{{ name }} : </strong>
+	<span>{{ message }}</span>
+	<span class="time">{{ time }}</span>
+	{{#if isOwner}}
+		<span class="message-controls">
+			<a href="#" class="remove-msg">&times;</a>
+		</span>
+	{{/if}}
+	</p>
+	<hr />
+</template>
+
+<template name="search">
+    {{> esInput index="users" placeholder="Search..." }}
+
+    {{#esEach index="users"}}
+        <p class="search-results">
+        	{{#if profile.name}}
+				<span class="search-name">{{ profile.name }}</span>
+        	{{/if}}
+        	{{#if profile.primaryemail }}
+		        <span class="search-email">{{ profile.primaryemail }}</span>
+		    {{/if}}
+        </p>
+    {{/esEach}}
+
+    {{#ifEsHasNoResults index="users"}}
+        <div class="no-results">No results found!</div>
+    {{/ifEsHasNoResults}}
+</template>
+
+<template name="footer">
+	<p>{{ footer_note }}</p>
+</template>
+
+<template name="profile">
+	<h2>Edit Your Profile</h2>
+	{{> avatar userId=userId shape="square" size="small"}}
+	<form>
+		<p>
+			<label for="fullname">Full Name :</label>
+			<input name="fullname" type="text" value="">
+		</p>
+		<p>
+			<label for="primaryemail">Primary Email</label>
+			<select name="primaryemail" id="">
+				<option value="">op 1</option>
+				<option value="">op 2</option>
+			</select>
+		</p>
+		<p>
+			<label for="Status">Status :</label>
+			<input name="status" type="text" value="">
+		</p>
+		<p class="formfooter">
+			<input type="submit" value="save profile">
+		</p>
+	</form>
+</template>

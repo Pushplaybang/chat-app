@@ -1,0 +1,115 @@
+html {
+    /*padding: 10px;*/
+    font-family: Verdana, sans-serif;
+    /*max-width: 400px;
+    margin:20px auto;*/
+}
+
+hr {
+	display: block;
+	clear: both;
+}
+
+.message-controls {
+	float: right;
+	display: block;
+}
+
+.login-buttons-dropdown-align-right {
+    float: right;
+}
+
+
+
+#message {
+	width: 100%;
+	height: 40px;
+	margin: 20px 0;
+}
+
+span.time {
+    display: block;
+    position: relative;
+    font-size: 80%;
+    color: #aaa;
+}
+
+/* App Status */
+.status {
+    float: left;
+    margin: 0;
+    min-width: 150px;
+}
+
+.status span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    margin: 2px 6px 0 0;
+    position: relative;
+    top: 1px;
+}
+
+.status-connected span {
+    background: rgb(137, 204, 36);
+}
+
+.status-disconnected span {
+background: rgb(247, 70, 15);
+}
+
+
+.userselect {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.userselect .avatar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.userselect p {
+    margin: 0 0 6px 0;
+    padding: 0 0 6px 40px;
+    border-bottom: 1px dotted #aaa;
+    overflow:hidden;
+    clear:both;
+    line-height: 30px;
+    position: relative;
+}
+
+.userselect label {
+    display: block;
+    position: relative;
+}
+
+.userselect label.active:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    width: 8px;
+    height: 8px;
+    background: rgb(137, 204, 36);
+    top: 12px;
+    right: 4px;
+    border-radius: 12px;
+}
+
+.userselect input {
+    position:absolute;
+    left:-1000px;
+}
+
+#iron-router-progress {
+    height:2px;
+    background-color : #00DFFC;
+    box-shadow       : 0 0 3px #00DFFC;
+}
