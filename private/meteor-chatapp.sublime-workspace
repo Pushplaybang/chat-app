@@ -112,7 +112,7 @@
 	"buffers":
 	[
 		{
-			"file": "server/publications.js",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications.js",
 			"settings":
 			{
 				"buffer_size": 291,
@@ -120,7 +120,7 @@
 			}
 		},
 		{
-			"file": "server/users.js",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/users.js",
 			"settings":
 			{
 				"buffer_size": 466,
@@ -128,7 +128,7 @@
 			}
 		},
 		{
-			"file": "client/lib/config.js",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/lib/config.js",
 			"settings":
 			{
 				"buffer_size": 394,
@@ -136,7 +136,7 @@
 			}
 		},
 		{
-			"file": "collections.js",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/collections.js",
 			"settings":
 			{
 				"buffer_size": 713,
@@ -144,7 +144,7 @@
 			}
 		},
 		{
-			"file": ".meteor/packages",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/packages",
 			"settings":
 			{
 				"buffer_size": 376,
@@ -152,7 +152,7 @@
 			}
 		},
 		{
-			"file": "client/client.html",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.html",
 			"settings":
 			{
 				"buffer_size": 3271,
@@ -160,7 +160,7 @@
 			}
 		},
 		{
-			"file": "client/client.js",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.js",
 			"settings":
 			{
 				"buffer_size": 3549,
@@ -661,7 +661,7 @@
 			[
 				{
 					"buffer": 0,
-					"file": "server/publications.js",
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -751,7 +751,7 @@
 				},
 				{
 					"buffer": 1,
-					"file": "server/users.js",
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/users.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -828,7 +828,7 @@
 								"bh_square_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"function_name_status_row": 4,
+							"function_name_status_row": -1,
 							"open_with_edit": true,
 							"side_bar_folders_auto_load_folder": 1,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
@@ -842,7 +842,7 @@
 				},
 				{
 					"buffer": 2,
-					"file": "client/lib/config.js",
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/lib/config.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -932,7 +932,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "collections.js",
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/collections.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1024,7 +1024,7 @@
 				},
 				{
 					"buffer": 4,
-					"file": ".meteor/packages",
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/packages",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1114,7 +1114,7 @@
 				},
 				{
 					"buffer": 5,
-					"file": "client/client.html",
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.html",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1205,7 +1205,7 @@
 				},
 				{
 					"buffer": 6,
-					"file": "client/client.js",
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1340,7 +1340,7 @@
 	{
 		"height": 102.0
 	},
-	"project": "chatapp.sublime-project",
+	"project": "meteor-chatapp.sublime-project",
 	"replace":
 	{
 		"height": 60.0

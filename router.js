@@ -31,15 +31,13 @@ Router.route('/contacts',function() {
 });
 
 Router.route('/contacts/:_id',function() {
-	this.render('chat', {
-		data : {}
-	});
-
+	this.render('chat');
 });
 
 Router.route('/chat',function() {
 	this.render('chat');
 });
+
 
 
 
@@ -58,13 +56,13 @@ Router.route('/search',function() {
 
 /* Group Routes */
 Router.route('/groups',function() {
-	this.render('groups');
+	this.render('groupList');
+});
+
+Router.route('/groups/create',function() {
+	this.render('groupCreate');
 });
 
 Router.route('/groups/:_id',function() {
-	this.render('group');
-});
-
-Router.route('/create-group',function() {
-	this.render('create-group');
+	this.render('groupPage');
 });

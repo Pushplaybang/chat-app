@@ -8,7 +8,6 @@ Meteor.publish('users', function() {
 	 								fields: {
 							 			_id:1,
 							 			profile:1,
-							 			emails:1,
 							 			contacts:1,
 							 		},
 							 	}

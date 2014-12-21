@@ -1,0 +1,25 @@
+<!-- User Profile Template -->
+<template name="profile">
+	<h2>Edit Your Profile</h2>
+	{{> avatar userId=userId shape="square" size="small"}}
+	<form>
+		<p>
+			<label for="fullname">Full Name :</label>
+			<input name="fullname" type="text" value="">
+		</p>
+		<p>
+			<label for="primaryemail">Primary Email</label>
+			<select name="primaryemail" id="">
+				<option value="">op 1</option>
+				<option value="">op 2</option>
+			</select>
+		</p>
+		<p>
+			<label for="Status">Status :</label>
+			<input name="status" type="text" value="">
+		</p>
+		<p class="formfooter">
+			<input type="submit" value="save profile">
+		</p>
+	</form>
+</template>

@@ -1,0 +1,82 @@
+<!-- Groups Templates -->
+
+
+<!-- List Groups -->
+<template name="groupList">
+	<h2>Your Groups</h2>
+	<a class="group-create" href="/groups/create">+</a>
+	<ul class="groupslist">
+		{{#if groups}}
+			{{#each groups}}
+				<li>
+					{{> group }}
+				</li>
+			{{/each}}
+		{{else}}
+			<li>You have no groups yet! why not <a href="/groups/create">create one.</a></li>
+		{{/if}}
+	</ul>
+</template>
+
+<!-- Single Group listing -->
+<template name="group">
+	<h2>Single group</h2>
+</template>
+
+<!-- Single Group Page -->
+<template name="groupPage">
+	<h2>Group Page</h2>
+</template>
+
+<!-- Create Group -->
+<template name="groupCreate">
+	<h2>Create a Group</h2>
+	{{> groupForm }}
+</template>
+
+<!-- Edit Group -->
+<template name="groupEdit">
+	<h2>Edit Group</h2>
+	{{> groupForm }}
+</template>
+
+<!-- Group Create and Edit Form -->
+<template name="groupForm">
+	<form class="group-create">
+		<p>
+			<Label for="group-name">Group Name</Label>
+			<input type="text" id="group-name" placeholder="group name">
+		</p>
+		<p>
+			<Label for="group-desc">Group Description</Label>
+			<input type="text" id="group-desc" placeholder="group description">
+		</p>
+<!-- 		<p class="groupcontacts">
+			<span>Invite Contacts to your group.</span>
+			{{#if contacts}}
+				{{#each contacts}}
+					<li>
+						{{> avatar user=this shape="square" size="small"}}
+						<a href="/contacts/{{ _id }}">
+							<span>{{ name }}</span>
+						</a>
+						<span>{{ email }}</span>
+						<a href="/contacts/{{ _id }}" class="add">Add to Group</a>
+					</li>
+				{{/each}}
+			{{else}}
+				<li>
+					<p>
+						You don't have any contacts yet!
+						<a href="/search">Find or invite them here.</a>
+					</p>
+				</li>
+			{{/if}}
+		</p> -->
+		<p class="formfooter">
+			<input type="submit" value="save group">
+		</p>
+	</form>
+</template>
+
+

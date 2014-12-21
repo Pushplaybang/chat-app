@@ -1,0 +1,51 @@
+<template name="contacts">
+	{{#if currentUser}}
+		<p>Your Contacts</p>
+		<ul class="userlist contacts">
+			{{#if contacts}}
+				{{#each contacts}}
+					{{> contact }}
+				{{/each}}
+			{{else}}
+				<li>
+					<p>
+						You don't have any contacts yet!
+						<a href="/search">Find or invite them here.</a>
+					</p>
+				</li>
+			{{/if}}
+		</ul>
+	{{/if}}
+</template>
+
+<template name="contact">
+	<li>
+		{{> avatar user=this shape="square" size="small"}}
+		<a href="/contacts/{{ _id }}">
+			<span>{{ name }}</span>
+		</a>
+		<span>{{ email }}</span>
+		<a href="/contacts/{{ _id }}" class="remove-contact">Remove Member</a>
+	</li>
+</template>
+
+<template name="search">
+    {{> esInput index="users" placeholder="Search..." }}
+	<ul class="userlist search">
+	    {{#esEach index="users"}}
+			{{#unless thisUser}}
+				<li>
+					<!-- Gravatar -->
+					{{> avatar user=this shape="square" size="small"}}
+					<span>{{ profile.name }}</span>
+					<span>{{ profile.primaryemail }}</span>
+					<a href="/contacts/{{ _id }}" class="add-contact">Add Member</a>
+				</li>
+			{{/unless}}
+	    {{/esEach}}
+	</ul>
+
+    {{#ifEsHasNoResults index="users"}}
+		<div class="no-results">No results found!</div>
+    {{/ifEsHasNoResults}}
+</template>

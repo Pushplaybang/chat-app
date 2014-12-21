@@ -4,7 +4,7 @@ Accounts.onCreateUser(function(options, user) {
 	user.profile = options.profile || {};
 
 	/* add our additional values to the profile */
-	if ( typeof user.services['google'] !== 'undefined' ) {
+	if ( typeof user.services.google !== 'undefined' ) {
 		user.profile.primaryemail = user.services.google.email;
 	} else {
 		user.profile.primaryemail = options.email;

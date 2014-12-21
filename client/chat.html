@@ -1,0 +1,38 @@
+<!-- Chat Layout -->
+<template name="chat">
+	{{> chatform }}
+	{{> messages }}
+</template>
+
+<!-- Chat Form -->
+<template name="chatform">
+	{{#if currentUser}}
+		<form class="chatform">
+			<label for="text">Message</label>
+			<textarea name="text" id="message" placeholder="write a message"></textarea>
+		</form>
+	{{/if}}
+</template>
+
+<!-- Messages -->
+<template name="messages">
+	{{#each messages}}
+		{{> message }}
+	{{/each}}
+</template>
+
+<!-- Single Message Template -->
+<template name="message">
+	<p>
+	{{> avatar userId=userId shape="square" size="small"}}
+	<strong>{{ name }} : </strong>
+	<span>{{ message }}</span>
+	<span class="time">{{ time }}</span>
+	{{#if isOwner}}
+		<span class="message-controls">
+			<a href="#" class="remove-msg">&times;</a>
+		</span>
+	{{/if}}
+	</p>
+	<hr />
+</template>
