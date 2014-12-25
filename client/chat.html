@@ -24,15 +24,15 @@
 <!-- Single Message Template -->
 <template name="message">
 	<p>
-	{{> avatar userId=userId shape="square" size="small"}}
-	<strong>{{ name }} : </strong>
-	<span>{{ message }}</span>
-	<span class="time">{{ time }}</span>
-	{{#if isOwner}}
-		<span class="message-controls">
-			<a href="#" class="remove-msg">&times;</a>
-		</span>
-	{{/if}}
+		{{> avatar userId=userId shape="square" size="small"}}
+		<strong>{{ name }} : </strong>
+		<span>{{ message }}</span>
+		<span class="time">{{ time }}</span>
+		{{#if isOwner}}
+			<span class="message-controls">
+				<a href="#" class="remove-msg">&times;</a>
+			</span>
+		{{/if}}
 	</p>
 	<hr />
 </template>

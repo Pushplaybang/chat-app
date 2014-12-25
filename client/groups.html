@@ -9,7 +9,7 @@
 		{{#if groups}}
 			{{#each groups}}
 				<li>
-					{{> group }}
+					{{> groupIndex }}
 				</li>
 			{{/each}}
 		{{else}}
@@ -19,13 +19,15 @@
 </template>
 
 <!-- Single Group listing -->
-<template name="group">
-	<h2>Single group</h2>
+<template name="groupIndex">
+	<h4><a href="groups/{{ _id }}">{{ groupname }}</a></h4>
+	<p>{{ description }}</p>
 </template>
 
 <!-- Single Group Page -->
 <template name="groupPage">
 	<h2>Group Page</h2>
+	<a href="/groups/{{ groupId }}/members" class="add-members">Add Members</a>
 </template>
 
 <!-- Create Group -->
@@ -51,32 +53,61 @@
 			<Label for="group-desc">Group Description</Label>
 			<input type="text" id="group-desc" placeholder="group description">
 		</p>
-<!-- 		<p class="groupcontacts">
-			<span>Invite Contacts to your group.</span>
-			{{#if contacts}}
-				{{#each contacts}}
-					<li>
-						{{> avatar user=this shape="square" size="small"}}
-						<a href="/contacts/{{ _id }}">
-							<span>{{ name }}</span>
-						</a>
-						<span>{{ email }}</span>
-						<a href="/contacts/{{ _id }}" class="add">Add to Group</a>
-					</li>
-				{{/each}}
-			{{else}}
-				<li>
-					<p>
-						You don't have any contacts yet!
-						<a href="/search">Find or invite them here.</a>
-					</p>
-				</li>
-			{{/if}}
-		</p> -->
 		<p class="formfooter">
 			<input type="submit" value="save group">
 		</p>
 	</form>
 </template>
+
+<template name="addGroupMembers">
+	<p class="groupcontacts">
+		<span>Invite Contacts to your group.</span>
+		{{#if contacts}}
+			{{#each contacts}}
+				<li>
+					{{> avatar user=this shape="square" size="small"}}
+					<a href="/contacts/{{ _id }}">
+						<span>{{ profile.name }}</span>
+					</a>
+					<span>{{ profile.primaryemail }}</span>
+					<a href="/contacts/{{ _id }}" class="add">Add to Group</a>
+				</li>
+			{{/each}}
+		{{else}}
+			<li>
+				<p>
+					You don't have any contacts yet!
+					<a href="/search">Find or invite them here.</a>
+				</p>
+			</li>
+		{{/if}}
+	</p>
+</template>
+
+<template name="GroupMembers">
+	<p class="groupcontacts">
+		<span>Invite Contacts to your group.</span>
+		{{#if contacts}}
+			{{#each contacts}}
+				<li>
+					{{> avatar user=this shape="square" size="small"}}
+					<a href="/contacts/{{ _id }}">
+						<span>{{ name }}</span>
+					</a>
+					<span>{{ email }}</span>
+					<a href="/contacts/{{ _id }}" class="remove">remove from Group</a>
+				</li>
+			{{/each}}
+		{{else}}
+			<li>
+				<p>
+					You don't have any contacts yet!
+					<a href="/search">Find or invite them here.</a>
+				</p>
+			</li>
+		{{/if}}
+	</p>
+</template>
+
 
 

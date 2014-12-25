@@ -4,20 +4,31 @@
 	but only 'stubs' run on the client for latencty
 	compensation.
 */
+
 Meteor.methods({
-	// Message Methods
+
+	/* Messages */
 	createMessage: function (name, time, msg, participant) {
-		if (!this.userId ) {
-			throw new Meteor.Error("not-authorized");
+		if ( !this.userId ) {
+			throw new Meteor.Error("denied", "not-authorized");
 		}
 
 		Messages.insert({
 			name 		: name,
 			message 	: msg,
-			userId 		: this.userid,
+			userId 		: this.userId,
 			participant : participant,
 			time 		: time,
+			status 		: 'unread'
 		});
+	},
+
+	updateMessageStatus : function(id) {
+		if (!this.userId) {
+			throw new Meteor.Error('not-authorized');
+		}
+
+		Messages.update( id, { $set : {status : 'read'} } );
 	},
 
 	removeMessage: function(id) {
@@ -30,25 +41,34 @@ Meteor.methods({
 		Messages.remove(id);
 	},
 
+
+
+	/* Contacts */
+
 	addToContacts: function(id) {
 		var u = Meteor.user();
 		if (!this.userId ) {
-			throw new Meteor.Error("not-authorized");
+			throw new Meteor.Error("denied", "not-authorized");
 		}
 
 		if ( _.contains(u.contacts,id) ) {
-			throw new Meteor.Error('already a contact');
+			throw new Meteor.Error("denied","already a contact");
 		}
 
 		Meteor.users.update( this.userId, {
 			$push : { contacts: id }
+		}, function(error,count) {
+			Invites.insert({
+				from : u._id,
+				to : id,
+				status : 'pending'
+			});
 		});
 	},
 
-	// remove from contacts
 	removeFromContacts : function(id) {
 		if (!this.userId ) {
-			throw new Meteor.Error("not-authorized");
+			throw new Meteor.Error("denied", "not-authorized");
 		}
 
 		Meteor.users.update( this.userId, {
@@ -56,10 +76,11 @@ Meteor.methods({
 		});
 	},
 
-	// Create a group
+	/* Groups */
+
 	createGroup : function(name, desc) {
 		if (!this.userId ) {
-			throw new Meteor.Error("not-authorized");
+			throw new Meteor.Error("denied", "not-authorized");
 		}
 
 		Groups.insert({
@@ -68,31 +89,41 @@ Meteor.methods({
 			description : desc,
 			time : Date.now(),
 		});
+	},
 
+	addMemberToGroup : function(groupId, userId) {
+		if (!this.userId) {
+			throw new Meteor.Error("denied","not-authorized");
+		}
+
+		var g = Groups.findOne(grouId);
+
+		if ( _.contains(g.members, userId) ) {
+			throw new Meteor.Error("denied","already a member");
+		}
+
+		Groups.update(groupId, {
+			$push : { members : userId }
+		});
 	},
 
 	// Update a group
 	updateGroup : function(id, name, desc) {
 		if (!this.userId ) {
-			throw new Meteor.Error("not-authorized");
+			throw new Meteor.Error("denied", "not-authorized");
 		}
-
 	},
 
-	// delete a group
 	removeGroup : function(id) {
 		if (!this.userId ) {
-			throw new Meteor.Error("not-authorized");
+			throw new Meteor.Error("denied", "not-authorized");
 		}
-
 	},
 
-	// remove yourself from a group
 	removeMeFromGroup : function(id) {
 		if (!this.userId ) {
-			throw new Meteor.Error("not-authorized");
+			throw new Meteor.Error("denied", "not-authorized");
 		}
-
 	}
 
 });

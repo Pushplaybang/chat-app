@@ -1,0 +1,12 @@
+<template name="invites">
+	{{#if invites}}
+		<ul>
+			{{#each invites}}
+				<li>
+					<span>from : {{ from }}</span>
+					<a href="#">Accept Invite</a>
+				</li>
+			{{/each}}
+		</ul>
+	{{/if}}
+</template>

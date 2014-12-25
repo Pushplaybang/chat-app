@@ -2,6 +2,14 @@ Meteor.publish('messages', function () {
 	return Messages.find({});
 });
 
+Meteor.publish('groups', function () {
+	return Groups.find({});
+});
+
+Meteor.publish('invites', function () {
+	return Invites.find({ to : this.userId });
+});
+
 Meteor.publish('users', function() {
 	return Meteor.users.find({
 							},{

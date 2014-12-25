@@ -1,7 +1,7 @@
 Template.messages.helpers({
 	messages: function() {
 		// should be refactored, by moving this to the router, we can adjust the pub/sub functions
-		var controller   = Iron.controller();
+		var controller = Iron.controller();
 		var u1  = controller.params._id;
 		var u2 	= Meteor.userId();
 		return Messages.find({
@@ -17,13 +17,15 @@ Template.message.helpers({
 	isOwner: function() {
 		return this.userId === Meteor.userId();
 	},
-	userId: function() {
+	userId: function() { // unneccessary
 		return this.userId;
 	},
 	time: function() {
 		return moment(this.time).format('MMMM Do YYYY, h:mm:ss a');
+	},
+	status : function() { // unneccessary
+		return this.status;
 	}
-
 });
 
 Template.messages.events = {
@@ -42,11 +44,6 @@ Template.chatform.events = {
 	"submit .chatform" : function(event) {
 		event.preventDefault();
 
-		// if the user hits enter
-		if (!Meteor.user()) {
-			throw new Meteor.Error("not-authorized");
-		}
-
 		var message 	 = $('#message');
 		var messageValue = $(message).val();
 
@@ -55,7 +52,7 @@ Template.chatform.events = {
 			throw new Meteor.Error("no msg!");
 		}
 
-		var name, email;
+		// var name, email;
 		var controller   = Iron.controller();
 		var currUser 	 = Meteor.user();
 		var time 		 = Date.now();
@@ -68,11 +65,30 @@ Template.chatform.events = {
 				return error;
 			}
 
+			// empty the field and variable
+			$('#message').val('');
+	        message.value = '';
+
 			return result;
 		});
-
-		// empty the field and variable
-		$('#message').val('');
-        message.value = '';
 	}
+};
+
+Template.message.rendered = function () {
+	var data = this.data;
+	if ( data.participant === Meteor.userId() ) {
+		var msgId = data._id;
+		// after a brief pause
+		setTimeout(function() {
+			// update the status of the message
+			Meteor.call('updateMessageStatus', msgId, function (error, result) {
+				if (error) {
+					console.log(error);
+					return error;
+				}
+			});
+
+		}, 900);
+	}
+
 };

@@ -1,10 +1,11 @@
 Meteor.subscribe('messages');
 Meteor.subscribe('users');
-
+Meteor.subscribe('groups');
+Meteor.subscribe('invites');
 
 
 Template.footer.helpers({
-	footer_note: function() {
+	footerNote: function() {
 		return "Simple Chat App built in Meteor";
 	}
 });

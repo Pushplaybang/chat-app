@@ -6,6 +6,7 @@
 
 Messages 	= new Meteor.Collection('messages');
 Groups 		= new Meteor.Collection('groups');
+Invites 	= new Meteor.Collection('invites');
 
 /* Search Index */
 EasySearch.createSearchIndex('users', {

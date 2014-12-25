@@ -64,5 +64,23 @@ Router.route('/groups/create',function() {
 });
 
 Router.route('/groups/:_id',function() {
-	this.render('groupPage');
+	this.render('groupPage', {
+		data : function() {
+			return Groups.findOne({_id : this.params._id});
+		}
+	}, { sort : {time: -1} } );
+});
+
+Router.route('/groups/:_id/members', function() {
+	this.render('addGroupMembers');
+});
+
+Router.route('/invites',function() {
+	this.render('invites',{
+		data : {
+			invites : function() {
+				return Invites.find({});
+			}
+		}
+	});
 });
