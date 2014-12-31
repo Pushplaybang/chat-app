@@ -1,0 +1,134 @@
+<!-- Groups Templates -->
+
+
+<!-- List Groups -->
+<template name="groupList">
+	<h2>Your Groups</h2>
+	<a class="group-create" href="/groups/create">+</a>
+	<ul class="groupslist">
+		{{#if groups}}
+			{{#each groups}}
+				<li>
+					{{> groupIndex }}
+				</li>
+			{{/each}}
+		{{else}}
+			<li>You have no groups yet! why not <a href="/groups/create">create one.</a></li>
+		{{/if}}
+	</ul>
+</template>
+
+<!-- Single Group listing -->
+<template name="groupIndex">
+	<h4><a href="groups/{{ _id }}">{{ groupname }}</a></h4>
+	<p>{{ description }}</p>
+</template>
+
+<!-- Single Group Page -->
+<template name="groupPage">
+	<h2>Group : {{ name }}</h2>
+	<p>{{ desc }}</p>
+	<a href="/groups/{{ groupId }}/members" class="manage-members">Manage Members</a>
+	<a href="/groups/{{ groupId }}/edit" class="manage-members">Edit Group</a>
+	{{> chatform isgroup=true}}
+	{{> messages isgroup=true}}
+</template>
+
+<!-- Create Group -->
+<template name="groupCreate">
+	<h2>Create a Group</h2>
+	{{> groupForm }}
+</template>
+
+<!-- Edit Group -->
+<template name="groupEdit">
+	<h2>Edit {{ groupName }} Group</h2>
+	{{> groupFormEdit }}
+	<a href="#" class="button button-warn leavegroup">Leave Group</a>
+</template>
+
+<!-- Group Create and Edit Form -->
+<template name="groupForm">
+	<form class="group group-create">
+		<p>
+			<Label for="group-name">Group Name</Label>
+			<input type="text" id="group-name" placeholder="group name">
+		</p>
+		<p>
+			<Label for="group-desc">Group Description</Label>
+			<input type="text" id="group-desc" placeholder="description">
+		</p>
+		<p class="formfooter">
+			<input type="submit" value="save group">
+		</p>
+	</form>
+</template>
+
+<template name="groupFormEdit">
+	<form class="group group-edit">
+		<p>
+			<Label for="group-name">Group Name</Label>
+			<input type="text" id="group-name" placeholder="group name" value="{{ groupName }}">
+		</p>
+		<p>
+			<Label for="group-desc">Group Description</Label>
+			<input type="text" id="group-desc" placeholder="description" value="{{ groupDesc }}">
+		</p>
+		<p class="formfooter">
+			<input type="submit" value="update group">
+		</p>
+	</form>
+</template>
+
+<template name="addGroupMembers">
+	<div class="groupcontacts">
+		<h4>Invite Contacts to your group.</h4>
+		{{#if contacts}}
+			{{#each contacts}}
+				{{#unless inGroup}}
+					<li>
+						{{> avatar user=this shape="square" size="small"}}
+						<a href="/contacts/{{ _id }}">
+							<span>{{ profile.name }}</span>
+						</a>
+						<span>{{ profile.primaryemail }}</span>
+						<a href="/contacts/{{ _id }}" class="add">Add to Group</a>
+					</li>
+				{{/unless}}
+			{{/each}}
+		{{else}}
+			<li>
+				<p>
+					You don't have any contacts yet!
+					<a href="/search">Find or invite them here.</a>
+				</p>
+			</li>
+		{{/if}}
+	</div>
+	<div class="groupmembers">
+		<h4>Current Group Members</h4>
+		{{#if members}}
+			{{#each members}}
+					<li>
+						{{> avatar user=this shape="square" size="small"}}
+						<a href="/contacts/{{ _id }}">
+							<span>{{ profile.name }}</span>
+						</a>
+						<span>{{ profile.primaryemail }}</span>
+						<a href="/contacts/{{ _id }}" class="remove">Remove From Group</a>
+					</li>
+			{{/each}}
+		{{else}}
+			<li>
+				<p>
+					This group doesn't have any members yet!
+					<strong> add some from your contacts. </strong>
+				</p>
+			</li>
+		{{/if}}
+	</div>
+	<a href="#" class="button button-warn leavegroup">Leave Group</a>
+</template>
+
+
+

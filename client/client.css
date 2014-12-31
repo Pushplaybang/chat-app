@@ -113,3 +113,34 @@ background: rgb(247, 70, 15);
     background-color : #00DFFC;
     box-shadow       : 0 0 3px #00DFFC;
 }
+
+/*
+
+    User lists
+
+*/
+.userlist {
+    padding: 10px 0;
+    list-style: none;
+}
+
+.userlist li {
+    padding: 9px;
+    border-bottom: 1px solid;
+    clear: both;
+    overflow: hidden;
+}
+
+.userlist li .avatar {
+    float: left;
+    margin: 0 9px;
+}
+
+.userlist li a {
+    display: block;
+}
+
+.userlist li a+span {
+    font-size: 80%;
+    color: rgba(10,10,10,0.6);
+}

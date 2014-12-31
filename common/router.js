@@ -12,10 +12,6 @@ Router.route('/',function() {
 	this.render('welcome');
 });
 
-// Router.route('/users',function() {
-// 	this.render('members');
-// });
-
 Router.route('/profile', function() {
 	this.render('profile');
 });
@@ -73,6 +69,14 @@ Router.route('/groups/:_id',function() {
 
 Router.route('/groups/:_id/members', function() {
 	this.render('addGroupMembers');
+});
+
+Router.route('/groups/:_id/edit', function() {
+	this.render('groupEdit', {
+		data : function() {
+			return Groups.findOne({_id : this.params._id});
+		}
+	});
 });
 
 Router.route('/invites',function() {

@@ -53,6 +53,14 @@ Template.search.helpers({
 		}
 
 		return false;
+	},
+	inContacts : function() {
+		// not optimal hack until I figure out why the search query isn't being altered
+		if ( _.contains(Meteor.user().contacts, this._id) ) {
+			return true;
+		}
+
+		return false;
 	}
 });
 

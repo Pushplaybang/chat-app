@@ -1,9 +1,15 @@
+
 Meteor.publish('messages', function () {
 	return Messages.find({});
 });
 
 Meteor.publish('groups', function () {
-	return Groups.find({});
+	return Groups.find({
+		$or : [
+			{owner : this.userId},
+			{members : {$in : [this.userId]}}
+		]
+	});
 });
 
 Meteor.publish('invites', function () {

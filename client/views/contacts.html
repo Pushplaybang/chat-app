@@ -34,13 +34,15 @@
 	<ul class="userlist search">
 	    {{#esEach index="users"}}
 			{{#unless thisUser}}
-				<li>
-					<!-- Gravatar -->
-					{{> avatar user=this shape="square" size="small"}}
-					<span>{{ profile.name }}</span>
-					<span>{{ profile.primaryemail }}</span>
-					<a href="/contacts/{{ _id }}" class="add-contact">Add Member</a>
-				</li>
+				{{#unless inContacts}}
+					<li>
+						<!-- Gravatar -->
+						{{> avatar user=this shape="square" size="small"}}
+						<span>{{ profile.name }}</span>
+						<span>{{ profile.primaryemail }}</span>
+						<a href="/contacts/{{ _id }}" class="add-contact">Add Member</a>
+					</li>
+				{{/unless}}
 			{{/unless}}
 	    {{/esEach}}
 	</ul>

@@ -4,6 +4,10 @@ Template.messages.helpers({
 		var controller = Iron.controller();
 		var u1  = controller.params._id;
 		var u2 	= Meteor.userId();
+		if (this.isgroup) {
+			return Messages.find( {groupId: u1}, { sort : {time: -1} } );
+		}
+
 		return Messages.find({
 			$and: [
 				{ userId: {$in : [u1, u2]} },
@@ -59,29 +63,47 @@ Template.chatform.events = {
 		var participant  = controller.params._id;
 		var name 		 = currUser.profile.name;
 
-		Meteor.call('createMessage', name, time, messageValue, participant, function(error,result) {
-			if (error) {
-				console.log(error);
-				return error;
-			}
+		if (this.isgroup) {
+			Meteor.call('createGroupMessage', name, time, messageValue, participant, function (error, result) {
+					if (error) {
+						console.log(error);
+						return error;
+					}
 
-			// empty the field and variable
-			$('#message').val('');
-	        message.value = '';
+					// empty the field and variable
+					$('#message').val('');
+			        message.value = '';
 
-			return result;
-		});
+					return result;
+			});
+		} else {
+			Meteor.call('createMessage', name, time, messageValue, participant, function(error,result) {
+				if (error) {
+					console.log(error);
+					return error;
+				}
+
+				// empty the field and variable
+				$('#message').val('');
+		        message.value = '';
+
+				return result;
+			});
+		}
 	}
 };
 
 Template.message.rendered = function () {
 	var data = this.data;
-	if ( data.participant === Meteor.userId() ) {
+	var isGroup = false;
+
+
+	if ( !(_.contains(data.readBy, Meteor.userId() )) ) {
 		var msgId = data._id;
 		// after a brief pause
 		setTimeout(function() {
 			// update the status of the message
-			Meteor.call('updateMessageStatus', msgId, function (error, result) {
+			Meteor.call('updateMessageStatus', msgId, function(error, result) {
 				if (error) {
 					console.log(error);
 					return error;
