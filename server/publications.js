@@ -13,7 +13,12 @@ Meteor.publish('groups', function () {
 });
 
 Meteor.publish('invites', function () {
-	return Invites.find({ to : this.userId });
+	return Invites.find({
+		$or : [
+			{ to : this.userId },
+			{ to : this.profile.primaryemail },
+		]
+	});
 });
 
 Meteor.publish('users', function() {
@@ -27,3 +32,4 @@ Meteor.publish('users', function() {
 							 	}
 						 	);
 });
+

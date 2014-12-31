@@ -66,6 +66,13 @@ Meteor.methods({
 		if (!this.userId ) {
 			throw new Meteor.Error("denied", "not-authorized");
 		}
+		var group = Groups.findOne(id);
+
+		if (group.owner !== this.userId) {
+			throw new Meteor.Error("denied", "not-authorized");
+		}
+
+		Groups.remove(id);
 	},
 
 	removeMeFromGroup : function(id) {
@@ -73,9 +80,19 @@ Meteor.methods({
 			throw new Meteor.Error("denied", "not-authorized");
 		}
 
-		Groups.update(id, {
-			$pull : { members : this.userId }
-		});
+		var group = Groups.findOne(id);
+
+		if (group.owner === this.userId) {
+			Groups.update(id, {
+				$set : { owner : null }
+			})
+
+		} else {
+			Groups.update(id, {
+				$pull : { members : this.userId }
+			});
+		}
+
 	}
 
 });
