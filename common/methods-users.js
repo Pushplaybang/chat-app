@@ -8,12 +8,15 @@
 Meteor.methods({
 
 	/* Contacts */
-
 	addToContacts: function(invitedUser) {
-		var u = Meteor.user();
 		if ( !this.userId ) {
 			throw new Meteor.Error("denied", "not-authorized");
 		}
+
+		// Check Arg vals
+		check(invitedUser, String);
+
+		var u = Meteor.user();
 
 		if ( _.contains(u.contacts,invitedUser) ) {
 			throw new Meteor.Error("denied", "already a contact");
@@ -50,7 +53,7 @@ Meteor.methods({
 					name 	: user.profile.name,
 					email 	: user.profile.primaryemail
 				},
-				to 		: invitedUser, // could be an email or id
+				to 		: invitedUser, // could be an email or id ??
 				status 	: 'pending'
 			});
 
@@ -63,9 +66,12 @@ Meteor.methods({
 			throw new Meteor.Error('denied', "not-authorized");
 		}
 
+		// Check Arg vals
+		check(id, String);
+
 		var uId 		= this.userId;
 		var inviteId 	= id;
-		// var invite 		= Invites.findOne(inviteId);
+		var invite 		= Invites.findOne(inviteId);
 
 		Meteor.users.update( uId, {
 			$addToSet : { contacts: invite.from.id }
@@ -88,6 +94,9 @@ Meteor.methods({
 			throw new Meteor.Error('denied', "not-authorized");
 		}
 
+		// Check Arg vals
+		check(id, String);
+
 		var uId 		= this.userId;
 		var inviteId 	= id;
 		var invite 		= Invites.findOne(inviteId);
@@ -105,8 +114,16 @@ Meteor.methods({
 			throw new Meteor.Error("denied", "not-authorized");
 		}
 
+		// Check Arg vals
+		check(id, String);
+
 		Meteor.users.update( this.userId, {
 			$pull : { contacts: id }
+		}, function(error, count) {
+			if (error) {
+				return error;
+			}
+			Invites.remove({to : id});
 		});
 	},
 

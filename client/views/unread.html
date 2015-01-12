@@ -1,0 +1,19 @@
+<template name="unread">
+	<h4>Unread Messages</h4>
+	{{#if messages}}
+		<ul class="list userlist unread">
+			{{#each messages}}
+				{{> unreadMessage }}
+			{{/each}}
+		</ul>
+	{{/if}}
+</template>
+
+<template name="unreadMessage">
+	<li class="message">
+		{{> avatar userId=userId shape="square" size="small"}}
+		<strong><a href="contacts/{{ userId }}">{{ name }}</a></strong>
+		<span>{{ message }}</span>
+		<span class="time">{{ time }}</span>
+	</li>
+</template>

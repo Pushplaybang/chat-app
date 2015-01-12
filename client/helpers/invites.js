@@ -1,4 +1,19 @@
-Template.invites.helpers({});
+Template.invites.helpers({
+	invites : function() {
+		var user = Meteor.user();
+		return Invites.find({
+			$and : [
+				{
+					$or : [
+						{ to : Meteor.userId },
+						{ to : user.profile.primaryemail }
+					]
+				},
+				{ status : 'pending' }
+			]
+		}, { sort : {time: -1} } );
+	}
+});
 
 Template.invites.events = {
 	'click .accept' : function(event) {

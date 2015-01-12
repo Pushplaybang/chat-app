@@ -1,8 +1,16 @@
 Template.groupList.helpers({
 	groups : function() {
 		return Groups.find({});
+	},
+	hasGroups : function() {
+		var groups = groups.find({}).fetch() || [];
+		if (groups.length > 0)
+			return true;
+
+		return false;
 	}
 });
+
 
 Template.groupIndex.helpers({
 	groupname : function() {
@@ -103,9 +111,10 @@ Template.addGroupMembers.helpers({
 	contacts : function() {
 		// should be moved to the router, create seperate pub/sub for contacts
 		var u = Meteor.user();
+		console.log(u.contacts);
 		return Meteor.users.find({
 			$and : [
-				{ _id : {$in : u.contacts} },
+				{ _id : u.contacts },
 				{ _id : {$ne : Meteor.userId()} }
 			]
 		});
@@ -114,7 +123,7 @@ Template.addGroupMembers.helpers({
 		var controller 	 = Iron.controller();
 		var groupId 	 = controller.params._id;
 		var currentGroup = Groups.findOne(groupId);
-
+		console.log(currentGroup.members);
 		return Meteor.users.find({
 			$and : [
 				{ _id : {$in : currentGroup.members} },

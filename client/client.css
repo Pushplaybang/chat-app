@@ -1,3 +1,5 @@
+/*basic prototyping styles*/
+
 html {
     /*padding: 10px;*/
     font-family: Verdana, sans-serif;
@@ -58,7 +60,6 @@ span.time {
 .status-disconnected span {
 background: rgb(247, 70, 15);
 }
-
 
 .userselect {
     display: block;
@@ -144,3 +145,35 @@ background: rgb(247, 70, 15);
     font-size: 80%;
     color: rgba(10,10,10,0.6);
 }
+
+/*
+html {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+body {
+    position: relative;
+    padding-left: 90%;
+    width: 100%;
+    overflow-x: hidden;
+    left: -90%;
+    left: 0;
+    margin-right: 90%;
+}
+
+ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46%;
+    height: 100%;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    margin: 0;
+    box-sizing: border-box;
+}*/

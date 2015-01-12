@@ -16,6 +16,12 @@ Meteor.methods({
 			throw new Meteor.Error("denied", "not-authorized");
 		}
 
+		// Check Arg vals
+		check(name, String);
+		check(time, Number);
+		check(msg, String);
+		check(participant, String);
+
 		Messages.insert({
 			name 		: name,
 			message 	: msg,
@@ -28,13 +34,26 @@ Meteor.methods({
 
 	updateMessageStatus : function(id) {
 		if (!this.userId) {
-			throw new Meteor.Error('not-authorized');
+			throw new Meteor.Error('denied', 'not-authorized');
 		}
 
-		Messages.update( id, { $addToSet : { readBy : this.userId } } );
+		// Check Arg vals
+		check(id, String);
+
+		Messages.update( id, {
+			$addToSet : { readBy : this.userId },
+			$set : {status : 'read'}
+		});
 	},
 
 	removeMessage: function(id) {
+		if (!this.userId) {
+			throw new Meteor.Error('denied', 'not-authorized');
+		}
+
+		// Check Arg vals
+		check(id, String);
+
 		var msg = Messages.findOne(id);
 
 		if (msg.userId !== this.userId) {
@@ -45,6 +64,16 @@ Meteor.methods({
 	},
 
 	createGroupMessage : function(name, time, msg, groupId) {
+		if (!this.userId) {
+			throw new Meteor.Error('denied', 'not-authorized');
+		}
+
+		// Check Arg vals
+		check(name, String);
+		check(time, Number);
+		check(msg, String);
+		check(groupId, String);
+
 		Messages.insert({
 			name 		: name,
 			message 	: msg,

@@ -14,6 +14,10 @@ Meteor.methods({
 			throw new Meteor.Error("denied", "not-authorized");
 		}
 
+		// Check Arg vals
+		check(name, String);
+		check(desc, String);
+
 		Groups.insert({
 			owner : this.userId,
 			name : name,
@@ -26,6 +30,10 @@ Meteor.methods({
 		if (!this.userId) {
 			throw new Meteor.Error("denied","not-authorized");
 		}
+
+		// Check Arg vals
+		check(groupId, String);
+		check(userId, String);
 
 		var g = Groups.findOne(groupId);
 
@@ -43,6 +51,10 @@ Meteor.methods({
 			throw new Meteor.Error("denied","not-authorized");
 		}
 
+		// Check Arg vals
+		check(groupId, String);
+		check(userId, String);
+
 		Groups.update(groupId, {
 			$pull : { members : userId }
 		});
@@ -53,6 +65,11 @@ Meteor.methods({
 		if (!this.userId ) {
 			throw new Meteor.Error("denied", "not-authorized");
 		}
+
+		// Check Arg vals
+		check(id, String);
+		check(name, String);
+		check(desc, String);
 
 		Groups.update(id, {
 			$set : {
@@ -66,6 +83,10 @@ Meteor.methods({
 		if (!this.userId ) {
 			throw new Meteor.Error("denied", "not-authorized");
 		}
+
+		// Check Arg vals
+		check(id, String);
+
 		var group = Groups.findOne(id);
 
 		if (group.owner !== this.userId) {
@@ -79,6 +100,9 @@ Meteor.methods({
 		if (!this.userId ) {
 			throw new Meteor.Error("denied", "not-authorized");
 		}
+
+		// Check Arg vals
+		check(id, String);
 
 		var group = Groups.findOne(id);
 

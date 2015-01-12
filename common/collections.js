@@ -26,14 +26,14 @@ EasySearch.createSearchIndex('users', {
 	'limit' : 10,                 	// not required, default is 10,
 	'query' : function (searchString) { // none of this works right now :(
 		// var currentUser   = Meteor.users.findOne(CurrentUserId); // CurrentUserId
-		var currentUser   = Meteor.user();
-		var userContacts  = CurrentUser.contacts;
+		// var currentUser   = Meteor.user();
+		// var userContacts  = CurrentUser.contacts;
 
 		// Default query that will be used for searching
 		var query = EasySearch.getSearcher('mongo-db').defaultQuery(this, searchString);
 
-		query['profile.primaryemail'] = { $ne : currentUser.profile.primaryemail };
-		query['profile.name'] = { $ne : currentUser.profile.name };
+		// query['profile.primaryemail'] = { $ne : currentUser.profile.primaryemail };
+		// query['profile.name'] = { $ne : currentUser.profile.name };
 		// query['_id'] = { $nin : userContacts };
 
 		return query;

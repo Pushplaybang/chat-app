@@ -23,7 +23,7 @@
 
 <!-- Single Message Template -->
 <template name="message">
-	<p>
+	<li>
 		{{> avatar userId=userId shape="square" size="small"}}
 		<strong>{{ name }} : </strong>
 		<span>{{ message }}</span>
@@ -33,6 +33,6 @@
 				<a href="#" class="remove-msg">&times;</a>
 			</span>
 		{{/if}}
-	</p>
-	<hr />
+	</li>
+	<!-- <hr /> -->
 </template>

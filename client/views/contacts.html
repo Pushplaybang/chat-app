@@ -2,7 +2,7 @@
 	{{#if currentUser}}
 		<p>Your Contacts</p>
 		<ul class="userlist contacts">
-			{{#if contacts}}
+			{{#if hasContacts}}
 				{{#each contacts}}
 					{{> contact }}
 				{{/each}}
@@ -48,6 +48,11 @@
 	</ul>
 
     {{#ifEsHasNoResults index="users"}}
-		<div class="no-results">No results found!</div>
+		<div class="no-results">
+			No results found! :
+			<strong>
+				<a href="/emailinvite">invite someone by email?</a>
+			</strong>
+		</div>
     {{/ifEsHasNoResults}}
 </template>

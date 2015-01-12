@@ -1,9 +1,9 @@
 // Acount settings
 Accounts.config({
-	sendVerificationEmail 			: false,
+	sendVerificationEmail 			  : false,
 	forbidClientAccountCreation 	: false,
-	restrictCreationByEmailDomain 	: function() {return false;},
-	loginExpirationInDays 			: 14
+	restrictCreationByEmailDomain : function() {return false;},
+	loginExpirationInDays 			  : 14
 });
 
 // UI settings
@@ -16,3 +16,8 @@ Accounts.ui.config({
   },
   passwordSignupFields: 'EMAIL_ONLY'
 });
+
+// Avatar Settings
+Avatar.options = {
+  emailHashProperty: "profile.primaryemail" // ???
+};

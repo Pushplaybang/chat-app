@@ -2,16 +2,19 @@ Template.messages.helpers({
 	messages: function() {
 		// should be refactored, by moving this to the router, we can adjust the pub/sub functions
 		var controller = Iron.controller();
-		var u1  = controller.params._id;
-		var u2 	= Meteor.userId();
-		if (this.isgroup) {
-			return Messages.find( {groupId: u1}, { sort : {time: -1} } );
+		var userArr = [
+			controller.params._id, // participant or group
+			Meteor.userId() // currUser
+		];
+
+		if (this.isgroup) { // condition set it template 'data context'
+			return Messages.find( {groupId: userArr[0] }, { sort : {time: -1} } );
 		}
 
 		return Messages.find({
 			$and: [
-				{ userId: {$in : [u1, u2]} },
-				{ participant: {$in : [u1, u2]} }
+				{ userId: { $in : userArr } },
+				{ participant: { $in : userArr } }
 			],
 		}, { sort : {time: -1} } );
 	}
@@ -40,7 +43,7 @@ Template.messages.events = {
 };
 
 Template.chatform.events = {
-	"keyup #message" : _.throttle(function(event) {
+	"keypress #message" : _.throttle(function(event) {
 		if (event.keyCode === 13) {
 			$(event.target).parents('form').submit();
 		}
@@ -93,6 +96,10 @@ Template.chatform.events = {
 	}
 };
 
+
+/* Message Template LifeCycle  - Changing the unread status of new nessages */
+var readTimer;
+
 Template.message.rendered = function () {
 	var data = this.data;
 	var isGroup = false;
@@ -100,8 +107,10 @@ Template.message.rendered = function () {
 
 	if ( !(_.contains(data.readBy, Meteor.userId() )) ) {
 		var msgId = data._id;
+
 		// after a brief pause
-		setTimeout(function() {
+		readTimer = Meteor.setTimeout(function() {
+
 			// update the status of the message
 			Meteor.call('updateMessageStatus', msgId, function(error, result) {
 				if (error) {
@@ -111,6 +120,14 @@ Template.message.rendered = function () {
 			});
 
 		}, 900);
+		console.log(readTimer);
+		return readTimer;
 	}
 
 };
+
+Template.message.destroyed = function () {
+	console.log(readTimer);
+	Meteor.clearTimeout(readTimer);
+};
+

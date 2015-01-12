@@ -1,11 +1,15 @@
 <!-- Main App Layout -->
-<body>
-	{{> appstate }}
-	{{> loginButtons align="right" }}<br />
-	<h1>Simple Chat</h1>
+<template name="AppLayout">
+	<header>
+		{{> appstate }}
+		{{> loginButtons align="right" }}<br />
+		<h1>Simple Chat</h1>
+	</header>
 	{{> navigation }}
 	<div class="content">
-		{{> Router }}  <!-- should swop this for a layout template -->
+			<!-- default template insert unless you use named regions -->
+			{{> yield }}
 	</div>
+
 	{{> footer }}
-</body>
+</template>
