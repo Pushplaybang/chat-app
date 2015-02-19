@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Me",
+				"Meteor.user	Meteor.user()"
+			],
+			[
+				"er",
+				"error	.error()"
+			],
+			[
+				"us",
+				"userId	Meteor: this.userId"
+			],
+			[
 				"back",
 				"background-color"
 			],
@@ -112,58 +124,26 @@
 	"buffers":
 	[
 		{
-			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications.js",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications-users.js",
 			"settings":
 			{
-				"buffer_size": 291,
+				"buffer_size": 2067,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/users.js",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/profile.js",
 			"settings":
 			{
-				"buffer_size": 466,
+				"buffer_size": 65,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/lib/config.js",
+			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/messages.js",
 			"settings":
 			{
-				"buffer_size": 394,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/collections.js",
-			"settings":
-			{
-				"buffer_size": 713,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/packages",
-			"settings":
-			{
-				"buffer_size": 376,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.html",
-			"settings":
-			{
-				"buffer_size": 3271,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.js",
-			"settings":
-			{
-				"buffer_size": 3549,
+				"buffer_size": 2998,
 				"line_ending": "Unix"
 			}
 		}
@@ -171,23 +151,71 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 93.0,
+		"height": 368.0,
 		"selected_items":
 		[
 			[
-				"snip met tem",
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"dupli",
+				"File: Duplicate"
+			],
+			[
+				"met ",
 				"Snippet: Meteor Template Tag"
 			],
 			[
-				"new",
-				"File: New File Relative to Current View"
+				"snip met temp",
+				"Snippet: Meteor Template Tag"
 			],
 			[
 				"ren",
 				"File: Rename"
 			],
 			[
-				"snip met temp",
+				"new ",
+				"File: New File Relative to Current View"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"snip me tem",
+				"Snippet: Meteor Template Tag"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"duplicate",
+				"File: Duplicate"
+			],
+			[
+				"duplica",
+				"File: Duplicate"
+			],
+			[
+				"snip met ",
+				"Snippet: Meteor {{#each}}"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"snip met tem",
 				"Snippet: Meteor Template Tag"
 			],
 			[
@@ -195,16 +223,16 @@
 				"Snippet: Meteor Template Tag"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"new ",
+				"new fil",
 				"File: New File Relative to Current View"
+			],
+			[
+				"new fi",
+				"ANF: New File"
+			],
+			[
+				"new fil ",
+				"ANF: New File"
 			],
 			[
 				"grunt",
@@ -221,18 +249,6 @@
 			[
 				"task",
 				"Tasks: New"
-			],
-			[
-				"dupli",
-				"File: Duplicate"
-			],
-			[
-				"dup",
-				"File: Duplicate"
-			],
-			[
-				"duplica",
-				"File: Duplicate"
 			],
 			[
 				"them",
@@ -269,14 +285,6 @@
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"move",
-				"File: Move"
-			],
-			[
-				"duplicate",
-				"File: Duplicate"
 			],
 			[
 				"ali",
@@ -346,26 +354,124 @@
 	[
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client",
-		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/server"
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/auth",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/lib",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views"
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/messages.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/users.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/router.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/auth/forgot.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications-users.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications-messages.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications-invites.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications-groups.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/node_modules/source-map-support/header-test/server.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/packages/service-configuration.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/cordova-build/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/StrictLineReader.java",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/cordova-build/platforms/android/cordova/lib/start-emulator",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/shell.sock",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/packages",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/layout.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/lib/config.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/auth/signin.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/auth/signup.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/auth/signup.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/auth/forgot.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/auth/signin.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/about.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/app.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/search.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/app.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/invites.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/groups.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/unread.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/groups.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/contacts.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/contacts.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/common/methods-gruops.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Array/prototype/group.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/chat.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Object/get-property-names.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Object/count.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/cordova-build/platforms/ios/cordova/apple_xcode_version",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/matteodem:easy-search/node_modules/elasticsearch/node_modules/lodash-node/compat/internals/cacheIndexOf.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/cordova-build/config.xml",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Array/prototype/signup.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/home.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/cordova-build/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/tls/DistinguishedNameParser.java",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/http/node_modules/request/node_modules/http-signature/lib/util.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/http/node_modules/request/node_modules/http-signature/lib/signer.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/matteodem:easy-search/node_modules/elasticsearch/node_modules/bluebird/js/main/synchronous_inspection.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/common/collections.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/unread.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/invites.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/web.cordova/program.json",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/matteodem:easy-search/node_modules/elasticsearch/node_modules/lodash-node/compat/internals/isNative.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/common/methods-messages.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/common/methods-users.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/views/head.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.css",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/packages/callback-hook.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/assets/packages/boilerplate-generator/boilerplate_web.browser.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/http/node_modules/request/node_modules/tunnel-agent/.jshintrc",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/cordova-build/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/HttpEngine.java",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/http/node_modules/request/node_modules/tough-cookie/public-suffix.txt",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/minifiers/node_modules/uglify-js/node_modules/source-map/lib/source-map/binary-search.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/iron:router/node_modules/body-parser/node_modules/type-is/HISTORY.md",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/node_modules/fibers/test/finish-multiple.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/minifiers/node_modules/uglify-js/node_modules/source-map/build/assert-shim.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/release",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/http/node_modules/request/node_modules/tough-cookie/lib/pubsuffix.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/cordova-build/plugins/org.apache.cordova.file/www/blackberry10/moveTo.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/webapp/node_modules/connect/lib/middleware/methodOverride.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/chat.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/web.browser/app/client/helpers/groups.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/web.browser/app/client/helpers/contacts.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/web.browser/app/client/helpers/chat.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/web.browser/app/client/helpers/app.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/packages/accounts-password.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/http/node_modules/request/lib/helpers.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/cordova-plugins",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/app/common/methods-messages.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/app/common/methods-gruops.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/cordova-build/platforms/android/CordovaLib/src/com/squareup/okhttp/MediaType.java",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/packages/matteodem_easy-search.js.map",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/web.cordova/app/client/helpers/groups.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/packages/matteodem_easy-search.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/groups.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/groups.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/chat.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/invites.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/invites.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/contacts.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/chat.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/app.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/contacts.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/app.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/collections.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/node_modules/netroute/src/platform-unix.cc",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/node_modules/cordova/node_modules/cordova-lib/node_modules/rc/node_modules/optimist/test/_/argv.js",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/layout.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/home.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/head.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/profile.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/home.html",
+		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/contacts.html",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/chatapp.sublime-project",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/node_modules/fstream/node_modules/mkdirp/test/umask_sync.js",
-		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.css",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/methods.js",
-		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/collections.js",
-		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/lib/config.js",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/lib/utils.js",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.js",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/router.js",
-		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/packages",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.html",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/node_modules/npm/lib/search.js",
-		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/cordova-build/platforms/android/cordova/lib/start-emulator",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/star.json",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/config/users.js",
-		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Array/prototype/group.js",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/node_modules/npm/lib/utils/gently-rm.js",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/packages/github.js",
 		"/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/local/build/programs/server/node_modules/browserstack-webdriver/test/stale_element_test.js",
@@ -382,106 +488,11 @@
 		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/functions/nona-content.php",
 		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/node_modules/grunt-focus/test/focus_test.js",
 		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/footer/footer-tablet.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/footer.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/attachment.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/functions/template-functions.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/header-nocontent.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-svgo/node_modules/svgo/plugins/convertShapeToPath.js",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/functions/theme-options.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/loop/loop.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/searchform.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/loop/posttypes/index-wine.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/fragment-wines-filter.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/sidebar-wines-filter.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/single.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/loop/loop-inner.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/sass/layout/_shame.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/functions/nona-custom-queries.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/functions/nona-pagination.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/sass/layout/_wines_index.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/sass/_layout.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/sass/_base.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/gruntfile.js",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/bower.json",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/bower_components/font-awesome/css/font-awesome.css",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/sass/_setup_variables.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/sass/layout/_general.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/bower_components/font-awesome/less/font-awesome.less",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/bower_components/font-awesome/fonts/fontawesome-webfont.woff",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/bower_components/font-awesome/fonts/fontawesome-webfont.svg",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/public/fonts/fontawesome-webfont.woff",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/public/fonts/fontawesome-webfont.svg",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/fonts/fontawesome-webfont.woff",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/fonts/fontawesome-webfont.svg",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/bower_components/font-awesome/fonts/FontAwesome.otf",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/public/fonts/FontAwesome.otf",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/fonts/FontAwesome.otf",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/footer-nocontent.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/functions.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/page-faq.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/page-template-ranges.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/page-template-home.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/page-template-fullwidth.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/page-template-contact.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/page-template-blank.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/page-template-alt.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/page-testimonials.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/author-bio.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/functions/nona-comments.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/sass/components/_slider.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/page-templates/fragment-wines-image-nav.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/sidebar-woocommerce.php",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/assets/sass/.sass-cache/27a4ac3d0058889041a01d940b2a5bcbc249033e/_wines_landing_pg.scssc",
-		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/comments.php",
-		"/Applications/MAMP/htdocs/_NODE_projects/meteor-scaffold/private/sass/login.scss",
-		"/Applications/MAMP/htdocs/_NODE_projects/meteor-scaffold/private/sass/_wp.scss",
-		"/Applications/MAMP/htdocs/_NODE_projects/meteor-scaffold/meteor-scaffold.css",
-		"/Applications/MAMP/htdocs/_WP_projects/idm/wp-content/themes/idm_2014/attachment.php",
-		"/Applications/MAMP/htdocs/_WP_projects/idm/wp-content/themes/idm_2014/assets/package.json",
-		"/Applications/MAMP/htdocs/_WP_projects/idm/wp-content/themes/idm_2014/functions.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/wp/_gallery.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/layout/_author.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/functions/nona-comments.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/functions/nona-options-render.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/sidebar-page.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/functions.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/node_modules/grunt-bowercopy/node_modules/bower/node_modules/mout/lang/isNaN.js",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/index.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/functions/mobile-detect/examples/session_example.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/single.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/wp/_wysiwyg.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/loop/formats/format-gallery.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/loop/formats/format-audio.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/loop/formats/format-aside.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/attachment.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/_base.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/js/scripts/main.js",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/_wp.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/author-bio.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/author.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/base/_type.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/bower.json",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/lib/_font-awesome.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/style.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/gruntfile.js",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/functions/nona-meta.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/wp/_pagination.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/loop/fragments/loop-indextitle.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/loop/fragments/loop-singletitles.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/loop/fragments/loop-archivetitles.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/layout/_pagetitle.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/functions/nona-pagination.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/loop/loop.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/base/_additional.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/sass/layout/_general.scss",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/js/lib/jquery.velocity.js",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/assets/js/lib/velocity.js",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/functions/template-functions.php",
-		"/Applications/MAMP/htdocs/_WP_projects/_nona_start/wp-content/themes/nona_start/functions/nona-custom-posts-and-meta.php"
+		"/Applications/MAMP/htdocs/_WP_projects/robertson/wp-content/themes/robertsons/footer.php"
 	],
 	"find":
 	{
-		"height": 228.0
+		"height": 60.0
 	},
 	"find_in_files":
 	{
@@ -511,6 +522,51 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"e",
+			"(!Meteor.userId() || !Meteor.loggingIn())",
+			"action ran",
+			"span",
+			"signin",
+			"signup",
+			"login",
+			"console.log('the action ran!!!');",
+			"signup",
+			"join",
+			"about",
+			"waitOn",
+			"if (!Meteor.userId() || !Meteor.loggingIn()) {\n			return null;\n		}",
+			"	if (!Meteor.userId() || !Meteor.loggingIn()) {\n			return null;\n		}",
+			"waitOn",
+			"search",
+			"unread",
+			"profile",
+			"login",
+			"services['google']['picture']",
+			"services.google.picture:1",
+			"time",
+			"check",
+			"return subs;",
+			"var subs =",
+			"$in",
+			"findOne",
+			"use",
+			"user",
+			"singleUser",
+			"Meteor.subscribe",
+			"waitOm",
+			"[u1, u2]",
+			";",
+			"$in",
+			"convo",
+			"convos",
+			"GroupMembers",
+			"'denied'",
+			"\"not-authorized\"",
+			"this.userId()",
+			"Meteor.userId",
+			"p>",
+			"p",
+			"substring",
 			"if (currUser.profile && currUser.profile.name) {\n			var name = currUser.profile.name;\n		} else if (currUser.emails) {\n			var email = currUser.emails[0].address;\n			var name = email.substring(0, email.indexOf('@'));\n		} else {\n			var name = 'Anonymous';\n		}",
 			"username",
 			"players",
@@ -593,52 +649,7 @@
 			"});\n",
 			"adminjs",
 			"adminJs",
-			"adminBuild",
-			"login.js",
-			"adminBuild",
-			"adminstyle",
-			"// ",
-			"all.js",
-			"jsScripts",
-			"jsscripts",
-			"	.vcard",
-			"form-allowed-tags",
-			"ie8compatability",
-			"scale-factor",
-			"body-line-height",
-			"body-font-size",
-			"$outputrems",
-			"$ie8compatability",
-			"$scale-factor",
-			"$body-line-height",
-			"font-size",
-			"body",
-			"$body-font-size",
-			":",
-			"pdf_Link",
-			"$term->slug",
-			"group",
-			"$people",
-			"#advisory ",
-			"%block",
-			"scroll",
-			"scrollBuffer",
-			"12px",
-			"remember",
-			");\n",
-			"isAuthenticated",
-			"isAUth",
-			"remember_me",
-			"cite",
-			"author",
-			"scroll",
-			"border-radius",
-			"border-",
-			" 			",
-			".html",
-			"open",
-			"simple-links",
-			"cookieParser"
+			"adminBuild"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -656,24 +667,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications.js",
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/publications-users.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 291,
+						"buffer_size": 2067,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								291,
-								291
+								1017,
+								1017
 							]
 						],
 						"settings":
@@ -681,46 +692,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -731,61 +702,31 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"function_name_status_row": 15,
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/server/users.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								148,
-								148
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -801,21 +742,62 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
+							"function_name_status_row": 49,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/profile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 65,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								52
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -825,10 +807,40 @@
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"function_name_status_row": -1,
+							"function_name_status_row": 2,
 							"open_with_edit": true,
 							"side_bar_folders_auto_load_folder": 1,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
@@ -837,387 +849,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/lib/config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 394,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								223,
-								223
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"function_name_status_row": 8,
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/collections.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 713,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								709,
-								709
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"function_name_status_row": 28,
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/.meteor/packages",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 376,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								217,
-								217
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"function_name_status_row": 8,
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3172,
-								3172
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"function_name_status_row": 133,
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4360.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/client.js",
-					"semi_transient": false,
+					"buffer": 2,
+					"file": "/Applications/MAMP/htdocs/_NODE_projects/chatapp/client/helpers/messages.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3549,
+						"buffer_size": 2998,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2127,
-								2127
+								2402,
+								2402
 							]
 						],
 						"settings":
@@ -1225,46 +874,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1275,23 +884,63 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"function_name_status_row": 96,
+							"function_name_status_row": 101,
 							"side_bar_folders_auto_load_folder": 1,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3284.0,
+						"translation.y": 5173.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1352,20 +1001,184 @@
 		"selected_items":
 		[
 			[
-				"",
+				"server/",
 				"server/users.js"
 			],
 			[
+				"",
+				"client/helpers/groups.js"
+			],
+			[
+				"groups.",
+				"client/helpers/groups.js"
+			],
+			[
+				"groups.html",
+				"client/views/groups.html"
+			],
+			[
+				"contacts",
+				"client/views/contacts.html"
+			],
+			[
+				"public",
+				"server/publications-users.js"
+			],
+			[
+				"router",
+				"client/router.js"
+			],
+			[
+				"layout",
+				"client/views/layout.html"
+			],
+			[
+				"app",
+				"client/helpers/app.js"
+			],
+			[
+				"layou",
+				"client/views/layout.html"
+			],
+			[
+				"layo",
+				"client/views/layout.html"
+			],
+			[
+				"conta",
+				"client/views/contacts.html"
+			],
+			[
+				"a",
+				"client/views/app.html"
+			],
+			[
+				"invites",
+				"client/views/invites.html"
+			],
+			[
+				"invites.",
+				"client/helpers/invites.js"
+			],
+			[
+				"messages.js",
+				"client/helpers/messages.js"
+			],
+			[
+				"unread",
+				"client/views/unread.html"
+			],
+			[
+				"chat",
+				"client/views/chat.html"
+			],
+			[
+				"messages",
+				"client/helpers/messages.js"
+			],
+			[
+				"head",
+				"client/views/head.html"
+			],
+			[
+				"publm",
+				"server/publications-messages.js"
+			],
+			[
+				"helpers/",
+				"client/helpers/contacts.js"
+			],
+			[
+				"message",
+				"server/publications-messages.js"
+			],
+			[
+				"pubuser",
+				"server/publications-users.js"
+			],
+			[
+				"pub-",
+				"server/publications-groups.js"
+			],
+			[
+				"pubmes",
+				"server/publications-messages.js"
+			],
+			[
+				"pubuse",
+				"server/publications-users.js"
+			],
+			[
 				"user",
-				"server/users.js"
+				"server/publications-users.js"
+			],
+			[
+				"helpers/con",
+				"client/helpers/contacts.js"
+			],
+			[
+				"publi",
+				"server/publications-groups.js"
+			],
+			[
+				"pubus",
+				"server/publications-users.js"
+			],
+			[
+				"mess",
+				"common/methods-messages.js"
+			],
+			[
+				"collec",
+				"common/collections.js"
+			],
+			[
+				"messmeth",
+				".meteor/local/build/programs/server/app/common/methods-messages.js"
+			],
+			[
+				"groups",
+				"common/methods-gruops.js"
+			],
+			[
+				"group",
+				".meteor/local/build/programs/server/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Array/prototype/group.js"
+			],
+			[
+				"methods",
+				"common/methods-messages.js"
+			],
+			[
+				"colle",
+				"collections.js"
+			],
+			[
+				"group.",
+				".meteor/local/build/programs/server/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Array/prototype/group.js"
+			],
+			[
+				"meth",
+				"methods.js"
+			],
+			[
+				"methd",
+				"methods.js"
+			],
+			[
+				"chat.js",
+				"client/chat.js"
+			],
+			[
+				"metho",
+				"methods.js"
+			],
+			[
+				"con",
+				"client/contacts.html"
 			],
 			[
 				"sear",
 				".meteor/local/build/programs/server/node_modules/npm/lib/search.js"
-			],
-			[
-				"router",
-				"router.js"
 			],
 			[
 				"server",
@@ -1418,10 +1231,6 @@
 			[
 				"topstrip",
 				"page-templates/fragment-wines-topstrip.php"
-			],
-			[
-				"layou",
-				"assets/sass/_layout.scss"
 			],
 			[
 				"main",
@@ -1620,10 +1429,6 @@
 				"assets/sass/wp/_gallery.scss"
 			],
 			[
-				"a",
-				"attachment.php"
-			],
-			[
 				"_pag",
 				"assets/sass/wp/_pagination.scss"
 			],
@@ -1706,162 +1511,6 @@
 			[
 				"image",
 				"loop/fragments/loop-imagelink.php"
-			],
-			[
-				"formatli",
-				"loop/formats/format-link.php"
-			],
-			[
-				"_comments",
-				"assets/sass/wp/_comments.scss"
-			],
-			[
-				"functions",
-				"functions.php"
-			],
-			[
-				"fun",
-				"functions.php"
-			],
-			[
-				"layout",
-				"assets/sass/_layout.scss"
-			],
-			[
-				"_footer",
-				"assets/sass/layout/_footer.scss"
-			],
-			[
-				"nonaadmin",
-				"functions/nona-admin.php"
-			],
-			[
-				"nonaedi",
-				"functions/nona-editor.php"
-			],
-			[
-				"nonaeditor",
-				"functions/nona-editor.php"
-			],
-			[
-				"deprece",
-				"functions/nona-deprecated.php"
-			],
-			[
-				"_widgets",
-				"assets/sass/wp/_widgets.scss"
-			],
-			[
-				"format",
-				"loop/formats/format-video.php"
-			],
-			[
-				"school",
-				"page-templates/page-tempalte-school.php"
-			],
-			[
-				"progra",
-				"page-templates/page-tempalte-programme.php"
-			],
-			[
-				"nonaposts",
-				"functions/nona-custom-posts-and-meta.php"
-			],
-			[
-				"people",
-				"page-templates/page-tempalte-people.php"
-			],
-			[
-				"_block",
-				"assets/sass/layout/_blocks.scss"
-			],
-			[
-				"_gener",
-				"assets/sass/layout/_general.scss"
-			],
-			[
-				"_blocks",
-				"assets/sass/layout/_blocks.scss"
-			],
-			[
-				"_blog",
-				"assets/sass/layout/_blog.scss"
-			],
-			[
-				"_setucla",
-				"assets/sass/_setup_classes.scss"
-			],
-			[
-				"setupvaria",
-				"assets/sass/_setup_variables.scss"
-			],
-			[
-				"setupmixin",
-				"assets/sass/_setup_mixins.scss"
-			],
-			[
-				"scripts/ma",
-				"assets/js/scripts/main.js"
-			],
-			[
-				"_home",
-				"assets/sass/layout/_home.scss"
-			],
-			[
-				"app",
-				"app.js"
-			],
-			[
-				"twitter",
-				"config/auth/twitter.js"
-			],
-			[
-				"log",
-				"config/auth/login.js"
-			],
-			[
-				"user.",
-				"models/user.js"
-			],
-			[
-				"index",
-				"routes/index.js"
-			],
-			[
-				"reme",
-				"config/auth/remember.js"
-			],
-			[
-				"_comment",
-				"assets/sass/wp/_comments.scss"
-			],
-			[
-				"c",
-				"comments.php"
-			],
-			[
-				"main.js",
-				"assets/js/scripts/main.js"
-			],
-			[
-				"pageho",
-				"page-templates/page-template-home.php"
-			],
-			[
-				"nonaoption",
-				"functions/nona-options-render.php"
-			],
-			[
-				"program",
-				"page-templates/page-tempalte-prrogramme.php"
-			],
-			[
-				"single",
-				"single.php"
-			],
-			[
-				"custom",
-				"functions/nona-custom-posts-and-meta.php"
 			]
 		],
 		"width": 0.0
@@ -1890,7 +1539,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 306.0,
+	"side_bar_width": 255.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

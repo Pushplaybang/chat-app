@@ -109,6 +109,7 @@ Router.route('/profile', {
 	},
 	action 	: function() {
 		if (this.ready()) {
+			console.log(Meteor.user());
 			this.render('profile');
 		}
 	},

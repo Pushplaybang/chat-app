@@ -48,7 +48,6 @@ Meteor.publish('groupusers', function(id) {
 	}
 
 	var groupUsers = Groups.findOne(id) || [];
-	// console.log(groupUsers);
 
 	return Meteor.users.find({
 								_id : { $in : groupUsers.members }

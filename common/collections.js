@@ -23,7 +23,7 @@ EasySearch.createSearchIndex('users', {
 			], 						// required, searchable field(s)
 	"use" :"mongo-db", 				// Search Engine
 	'collection' : Meteor.users,    // required, Mongo Collection
-	'limit' : 10,                 	// not required, default is 10,
+	'limit' : 50,                 	// not required, default is 10,
 	'query' : function (searchString) { // none of this works right now :(
 		// var currentUser   = Meteor.users.findOne(CurrentUserId); // CurrentUserId
 		// var currentUser   = Meteor.user();
