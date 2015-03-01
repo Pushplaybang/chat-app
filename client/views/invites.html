@@ -1,9 +1,9 @@
-<template name="invites">
+<template name="inviteslist">
 	{{#if invites}}
 		<ul>
 			{{#each invites}}
 				<li>
-					<span>from : {{ from.name }}</span>
+					<span>from : {{ name }}</span>
 					<a href="#" class="accept">Accept Invite</a>
 				</li>
 			{{/each}}

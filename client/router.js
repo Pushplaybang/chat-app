@@ -2,6 +2,10 @@
 	Routes Index
 	- - - -
 	/ 						[home]
+	/about 					[about]
+	/signin 				[signin]
+	/singup 				[singup]
+	/forgot 				[forgot]
 	/profile 				[profile]
 	/search 				[search and invite users]
 	/contacts 				[contacts]
@@ -52,13 +56,13 @@ Router.onBeforeAction(function() {
 	if ( !(Meteor.userId() || Meteor.loggingIn()) ) {
 		// Router.go('home');
 		this.stop();
-		window.history.back();
+		window.history.back(); // FIXME : when going to restricted page from external URL
 		this.next();
 	} else {
 		this.next();
 	}
 }, {
-	except : ['home','signin', 'signup','forgot','about']
+	except : ['home','signin', 'signup','forgot', 'forgotreset', 'about']
 });
 
 
@@ -90,9 +94,27 @@ Router.route('/signup', {
 	}
 });
 
+Router.route('/signout', {
+	name: 'signout',
+	action : function() {
+		Meteor.logout();
+		Router.go('home');
+	}
+});
+
 Router.route('/forgot', {
 	name: 'forgot',
 	action : function() {
+		this.render('forgot');
+	}
+});
+
+Router.route('/forgot/:token', {
+	name: 'forgotreset',
+	action : function() {
+		// console.log(this.params);
+		Accounts._resetPasswordToken = this.params.token;
+		// console.log(Accounts._resetPasswordToken);
 		this.render('forgot');
 	}
 });
@@ -351,7 +373,7 @@ Router.route('/invites', {
 
 	action 	: function() {
 		if (this.ready()) {
-			this.render('invites');
+			this.render('inviteslist');
 		}
 	},
 

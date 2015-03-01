@@ -14,6 +14,10 @@ Template.signin.helpers({
 });
 
 Template.signin.events({
+  'click .sa-google' : function(event) {
+    event.preventDefault();
+    Meteor.loginWithGoogle();
+  },
   'submit': function(event, template) {
     event.preventDefault();
 

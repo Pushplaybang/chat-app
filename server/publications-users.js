@@ -9,15 +9,15 @@ Meteor.publish('appusers', function() {
 	}
 
 	return Meteor.users.find({},{
-	 								fields: {
-							 			_id:1,
-							 			profile:1,
-							 			contacts:1,
-							 			emails:1,
-							 			'services.google.picture':1
-							 		},
-							 	}
-						 	);
+			fields: {
+	 			_id:1,
+	 			profile:1,
+	 			contacts:1,
+	 			emails:1,
+	 			'services.google.picture':1
+	 		},
+	 	}
+	);
 });
 
 Meteor.publish('contacts', function() {
@@ -29,17 +29,17 @@ Meteor.publish('contacts', function() {
 	var contacts 	= user.contacts || [];
 
 	return Meteor.users.find({
-								_id : { $in : contacts }
-							},{
-	 								fields: {
-							 			_id:1,
-							 			profile:1,
-							 			contacts:1,
-							 			emails:1,
-							 			'services.google.picture':1
-							 		},
-							 	}
-						 	);
+		_id : { $in : contacts }
+	},{
+				fields: {
+	 			_id:1,
+	 			profile:1,
+	 			contacts:1,
+	 			emails:1,
+	 			'services.google.picture':1
+	 		},
+	 	}
+ 	);
 });
 
 Meteor.publish('groupusers', function(id) {
@@ -50,16 +50,16 @@ Meteor.publish('groupusers', function(id) {
 	var groupUsers = Groups.findOne(id) || [];
 
 	return Meteor.users.find({
-								_id : { $in : groupUsers.members }
-							},{
-								fields: {
-						 			_id:1,
-						 			profile:1,
-						 			contacts:1,
-						 			emails:1,
-						 			'services.google.picture':1
-						 		},
-						 	});
+		_id : { $in : groupUsers.members }
+	},{
+		fields: {
+ 			_id:1,
+ 			profile:1,
+ 			contacts:1,
+ 			emails:1,
+ 			'services.google.picture':1
+ 		},
+ 	});
 });
 
 // not convinced this is neccessary
@@ -69,17 +69,17 @@ Meteor.publish('thisUser', function() {
 	}
 
 	return Meteor.users.find({
-									_id : this.userId
-								},{
-		 								fields: {
-								 			_id:1,
-								 			profile:1,
-								 			contacts:1,
-								 			emails:1,
-								 			'services.google.picture':1
-								 		},
-								 	}
-								);
+		_id : this.userId
+	},{
+				fields: {
+	 			_id:1,
+	 			profile:1,
+	 			contacts:1,
+	 			emails:1,
+	 			'services.google.picture':1
+	 		},
+	 	}
+	);
 });
 
 Meteor.publish('singleUser', function(id) {
@@ -88,17 +88,17 @@ Meteor.publish('singleUser', function(id) {
 	}
 
 	return Meteor.users.find({
-								_id : { $in : [id, this.userId] }
-							},{
-	 								fields: {
-							 			_id:1,
-							 			profile:1,
-							 			contacts:1,
-							 			emails:1,
-							 			'services.google.picture':1
-							 		},
-							 	}
-						 	);
+		_id : { $in : [id, this.userId] }
+	},{
+				fields: {
+	 			_id:1,
+	 			profile:1,
+	 			contacts:1,
+	 			emails:1,
+	 			'services.google.picture':1
+	 		},
+	 	}
+ 	);
 });
 
 

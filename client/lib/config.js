@@ -7,17 +7,15 @@ Accounts.config({
 });
 
 // UI settings
-Accounts.ui.config({
-  requestPermissions: {
-    google: ['profile', 'email']
-  },
-  requestOfflineToken: {
-    google: true
-  },
-  passwordSignupFields: 'EMAIL_ONLY'
-});
+// Accounts.ui.config({
+//   requestPermissions: {
+//     google: ['profile', 'email']
+//   },
+//   requestOfflineToken: {
+//     google: true
+//   },
+//   passwordSignupFields: 'EMAIL_ONLY'
+// });
 
 // Avatar Settings
-Avatar.options = {
-  emailHashProperty: "profile.primaryemail" // ???
-};
+// Avatar.options = {};

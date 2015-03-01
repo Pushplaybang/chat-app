@@ -1,9 +1,10 @@
 <template name="forgot">
+
 	{{#if resetPassword}}
 		<h2 class="title page">Reset Your Uverse Password</h2>
 		<p>Fill in your new password below, and try remember it this time!</p>
 	     <form id="new-password" action="action">
-	        <div>
+	        <div class="input-symbol {{errorClass 'email'}}">
 	           <input type="text" id="new-password-password" />
 	           <input type="submit" value="Change Password" />
 	        </div>
@@ -12,10 +13,18 @@
 	  	<h2 class="title page">Forgot your Password?</h2>
 	  	<p>Give us your e-mail address and we'll send you a link that will allow you to reset your password.</p>
 	      <form id="recovery-form" action="action">
-			<div>
-				<input type="text" id="recovery-email" />
+			<div class="input-symbol {{errorClass 'email'}}">
+				<input type="email" id="recovery-email" />
 				<input type="submit" value="Send Reset Instructions" />
 			</div>
 	      </form>
+	  {{/if}}
+
+	  {{#if errorMessages}}
+	    <div class="list-errors">
+	      {{#each errorMessages}}
+	        <div class="list-item">{{this}}</div>
+	      {{/each}}
+	    </div>
 	  {{/if}}
 </template>
