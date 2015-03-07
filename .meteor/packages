@@ -5,18 +5,13 @@
 
 meteor-platform
 autopublish
-insecure
 iron:router
 accounts-password
+accounts-google
 bengott:avatar
 percolate:velocityjs
-ian:accounts-ui-bootstrap-3
-twbs:bootstrap
 multiply:iron-router-progress
-aldeed:autoform
-aldeed:collection2
 momentjs:moment
 matteodem:easy-search
 dburles:collection-helpers
-fourseven:scss
 email
