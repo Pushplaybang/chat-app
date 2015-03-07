@@ -4,14 +4,19 @@
 # but you can also edit it by hand.
 
 meteor-platform
+autopublish
+insecure
+iron:router
 accounts-password
 bengott:avatar
-iron:router
-aldeed:collection2
-aldeed:autoform
-accounts-google
 percolate:velocityjs
+ian:accounts-ui-bootstrap-3
+twbs:bootstrap
 multiply:iron-router-progress
+aldeed:autoform
+aldeed:collection2
 momentjs:moment
 matteodem:easy-search
+dburles:collection-helpers
+fourseven:scss
 email

@@ -112,7 +112,7 @@ background: rgb(247, 70, 15);
 #iron-router-progress {
     height:2px;
     background-color : #00DFFC;
-    box-shadow       : 0 0 3px #00DFFC;
+    box-shadow       : 0 0 2px #00DFFC;
 }
 
 /*
