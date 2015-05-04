@@ -83,7 +83,7 @@
 <template name="addGroupMembers">
 	<div class="groupcontacts">
 		<h4>Invite Contacts to your group.</h4>
-		{{#if contacts}}
+		{{#if hasContacts}}
 			{{#each contacts}}
 				{{#unless inGroup}}
 					<li>

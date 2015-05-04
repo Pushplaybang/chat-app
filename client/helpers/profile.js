@@ -3,3 +3,4 @@ Template.profile.helpers({
 		// ...
 	}
 });
+

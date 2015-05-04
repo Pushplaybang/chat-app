@@ -1,10 +1,9 @@
 Template.contacts.helpers({
 	contacts : function() {
-		var u = Meteor.user();
-		var contacts = u.contacts || [];
+		var contacts = Meteor.user().contacts || [];
 
 			return Meteor.users.find({
-							$and : [
+				$and : [
 					{ _id : {$in : contacts} },
 					{ _id : {$ne : Meteor.userId()} }
 				]

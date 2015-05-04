@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 iron:router
 accounts-password
 accounts-google
@@ -15,3 +14,4 @@ momentjs:moment
 matteodem:easy-search
 dburles:collection-helpers
 email
+msavin:mongol

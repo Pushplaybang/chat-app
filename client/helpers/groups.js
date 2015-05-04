@@ -107,26 +107,36 @@ Template.groupFormEdit.events = {
 };
 
 Template.addGroupMembers.helpers({
-	// This and this section part of template violates DRY.
+	// This section and this part of template violates DRY.
 	contacts : function() {
 		// should be moved to the router, create seperate pub/sub for contacts
 		var u = Meteor.user();
-		console.log(u.contacts);
+		var contacts = u.contacts || [];
+
 		return Meteor.users.find({
 			$and : [
-				{ _id : u.contacts },
+				{ _id : {$in : contacts} },
 				{ _id : {$ne : Meteor.userId()} }
 			]
 		});
+	},
+	hasContacts : function() {
+		var contacts = Meteor.user().contacts || [];
+		if (contacts.length > 0) {
+			return true;
+		}
+
+		return false;
 	},
 	members : function() {
 		var controller 	 = Iron.controller();
 		var groupId 	 = controller.params._id;
 		var currentGroup = Groups.findOne(groupId);
-		console.log(currentGroup.members);
+		var members 	 = currentGroup.members || [];
+
 		return Meteor.users.find({
 			$and : [
-				{ _id : {$in : currentGroup.members} },
+				{ _id : {$in : members } },
 				{ _id : {$ne : Meteor.userId()} }
 			]
 		});
